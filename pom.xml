@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.openleap</groupId>
+  <artifactId>crud-service-archetype</artifactId>
+  <version>1.0.5</version>
+  <packaging>maven-archetype</packaging>
+
+  <name>crud-service-archetype</name>
+  <description>A new CRUD Service for OpenLeap.io</description>
+  <url>https://github.com/openleap-io/${project.artifactId}</url>
+  <inceptionYear>2024</inceptionYear>
+
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ssh</artifactId>
+        <version>3.4.3</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+        <artifactId>wagon-ftp</artifactId>
+        <version>3.4.3</version>
+      </extension>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>3.3.0</version>
+      </extension>
+    </extensions>
+
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+          <configuration>
+            <addDefaultExcludes>false</addDefaultExcludes>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <organization>
+    <name>OpenLeap.io</name>
+    <url>https://www.openleap.io</url>
+  </organization>
+
+
+  <developers>
+    <developer>
+      <id>soeren</id>
+      <name>Soeren Kemman</name>
+      <email>soeren.kemmann@bb-online.de</email>
+      <organization>B&amp;B Unternehmensberatung</organization>
+      <organizationUrl>https://www.bb-online.de</organizationUrl>
+      <roles>
+        <role>Project Lead</role>
+        <role>Architect</role>
+        <role>Developer</role>
+        <role>Deployer</role>
+      </roles>
+      <timezone>+2</timezone>
+    </developer>
+    <developer>
+      <id>uwe</id>
+      <name>Uwe Scheuermann</name>
+      <email>uwe.scheuermann@bb-online.de</email>
+      <url></url>
+      <organization>B&amp;B Unternehmensberatung</organization>
+      <organizationUrl>https://www.bb-online.de</organizationUrl>
+      <roles>
+        <role>Project Lead</role>
+        <role>Architect</role>
+        <role>Developer</role>
+        <role>Deployer</role>
+      </roles>
+      <timezone>+2</timezone>
+    </developer>
+    <developer>
+      <id>scherrer</id>
+      <name>Heiko Scherrer</name>
+      <email>scherrer@openwms.org</email>
+      <url>https://openwms.github.io/</url>
+      <organization>Interface21.io</organization>
+      <organizationUrl>https://www.interface21.io</organizationUrl>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>+2</timezone>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>Apache License 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+      <comments>OpenLeap.io is distributed as open-source</comments>
+    </license>
+  </licenses>
+</project>

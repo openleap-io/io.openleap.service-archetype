@@ -1,0 +1,12 @@
+#set( $symbol_pound = '#' )
+#set( $symbol_dollar = '$' )
+#set( $symbol_escape = '\' )
+ _______                         _         ______                   _
+(_______)                       | |       / _____)                 (_)
+ _____   _   _ _____ ____  ____ | | _____( (____  _____  ____ _   _ _  ____ _____
+|  ___) ( ${symbol_escape} / |____ |    ${symbol_escape}|  _ ${symbol_escape}| || ___ |${symbol_escape}____ ${symbol_escape}| ___ |/ ___) | | | |/ ___) ___ |
+| |_____ ) X (/ ___ | | | | |_| | || ____|_____) ) ____| |    ${symbol_escape} V /| ( (___| ____|
+|_______|_/ ${symbol_escape}_)_____|_|_|_|  __/ ${symbol_escape}_)_____|______/|_____)_|     ${symbol_escape}_/ |_|${symbol_escape}____)_____)
+                          |_|
+${symbol_dollar}{application.title} ${symbol_dollar}{application.version}
+Powered by Spring Boot ${symbol_dollar}{spring-boot.version}
